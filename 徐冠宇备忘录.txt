@@ -5,7 +5,7 @@ git clone git@github.com:balabalaaoligei/weixin_little_program.git
 git pull
 第四步 ： 提交
 git add .
-git commit -m "这里替换成任何你的备注"
+git commit -m"这里替换成任何你的备注"
 git push
 //到这里一次提交就完成了
 
