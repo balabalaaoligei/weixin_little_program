@@ -1,0 +1,15 @@
+第一步  ：  先把项目 克隆下来
+git clone git@github.com:balabalaaoligei/weixin_little_program.git
+第二步：  开发
+第三步：提交前的更新
+git pull
+第四步 ： 提交
+git add .
+git commit -m"这里替换成任何你的备注"
+git push
+//到这里一次提交就完成了
+
+
+下次开发前记得更新就行
+第五步 ：如果这不是你第一次克隆了，那么你每一次开发之前都要先更新到最新,以便获取别人提交后的版本
+也就是git pull
