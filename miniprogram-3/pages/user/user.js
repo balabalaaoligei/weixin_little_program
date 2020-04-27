@@ -1,15 +1,5 @@
-//logs.js
-const util = require('../../utils/util.js')
-
 Page({
-  data: {
-    logs: []
-  },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+  data:{
+    message:'Hey ~ Cool guys，这里是游戏攻略分享平台，希望在这里你可以放飞自我，自由翱翔，愿你打游戏把把赢，玩的好不要忘记与我们分享您的游戏攻略哦! '
   }
 })

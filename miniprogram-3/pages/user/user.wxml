@@ -1,6 +1,23 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<!--徐大佬，我是真滴菜，别生气呀-->
+
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>    <!--获取用户头像直接显示在小程序中-->
+    </view>
+    <open-data type="userNickName" lang="zh_CN"></open-data>    <!--获取用户昵称直接显示在小程序中-->
+  </view>
+
+  <view class="border"><!--这里做上下边框-->
+    <text>Welcome to you !</text>
+  </view>
+
+  <view class="experience">
+    <view>{{message}}</view>
+  </view>
+  <button>查看我的攻略</button>
+<!--这里写动画小块-->
+  <view class="animation-div one"></view>
+  <view class="animation-div two"></view>
 </view>
