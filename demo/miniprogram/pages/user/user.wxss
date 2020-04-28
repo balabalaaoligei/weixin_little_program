@@ -1,0 +1,102 @@
+/**index.wxss**/
+.container{
+  background-color: rgb(242, 242, 100);
+  color: brown;
+  padding: 60rpx 0;
+}
+.userinfo {  
+  position: relative;  
+  width: 750rpx;  
+  height: 320rpx;  
+  color: rgb(209, 122, 122);
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+  
+.userinfo-avatar {  
+  overflow:hidden;  
+  display: block;  
+  width: 260rpx;
+  height: 260rpx;
+  margin-bottom: 30rpx;
+  border-radius: 50%;  
+  border: 2px solid rgb(238, 137, 137);  
+}  
+
+.border{
+  width: 500rpx;
+  padding: 30rpx 0;
+  margin: 70rpx 0;
+  border-bottom: 3rpx solid brown;
+  border-top: 3rpx solid brown;
+  text-align: center;
+}
+
+.experience{
+  width: 530rpx;
+  font-size: 12px;
+  line-height: 2;
+  /* border: 3rpx solid brown; */
+}
+/* 动画小块开始  */
+.animation-div{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+.one{ 
+  background: lightgreen;
+  animation: animation1 10s linear infinite;
+}
+.two{
+  background: orange;
+  animation: animation2 10s linear infinite;
+}
+@keyframes animation1 {
+  0% {
+      left: 110%;
+      bottom: -10%;
+  }
+  33% {
+      left: 50%;
+      bottom: 100%;
+  }
+  66% {
+      left: -10%;
+      bottom: 50%;
+  }
+  100% {
+      left: 110%;
+      bottom: -10%;
+  }
+}
+@keyframes animation2 {
+  0% {
+      left: -10%;
+      bottom: -10%;
+  }
+  20% {
+      left: 50%;
+      bottom: 100%;
+  }
+  60% {
+      left: 110%;
+      bottom: 50%;
+  }
+  100% {
+      left: -10%;
+      bottom: -10%;
+  }
+}
+button{
+  background-color: yellow;
+  border: 1px solid brown;
+  color: brown;
+  margin-top: 60rpx;
+  margin-left: 100rpx;
+}

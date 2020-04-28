@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="p">点击按钮查询所有游戏</text>
+    <button size="mini" type="default" bindtap="onQuery">查询游戏</button>
+<view wx:for="{{queryResult}}">
+  {{index}}: {{item.game_name}}
+  简介{{item.game_intro}}
+</view>
+</view>
