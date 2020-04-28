@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/games/games"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+    "tabBar": {
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+       {
+        "pagePath": "pages/games/games",
+        "text": "攻略"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }]
+    },
+    "networkTimeout": {
+      "request": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true,
+    "navigateToMiniProgramAppIdList": [
+      "wxe5f52902cf4de896"
+    ],
+
+
+
+
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
