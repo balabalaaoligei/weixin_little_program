@@ -5,11 +5,11 @@ Page({
     userImg:""
   },
   //页面初次加载时运行
-  onLoad:function(){
-    this.setData({
-      userImg:app.globalData.userImg
-    })
-  },
+  // onLoad:function(){
+  //   this.setData({
+  //     userImg:app.globalData.userImg
+  //   })
+  // },
   //修改用户头像
   touchUserImg:function(){
     let that=this;

@@ -24,12 +24,15 @@
   border: 2px solid rgb(238, 137, 137);  
 }  
 .userImg{  
+  position: relative;  
+  bottom:10rpx ;
+  right: 5rpx;
   overflow:hidden;  
   display: block;  
   width: 260rpx;
   height: 260rpx;
   margin-bottom: 30rpx;
-  border-radius: 50%;  
+  
   border: 2px solid rgb(238, 137, 137);  
 }  
 .border{
