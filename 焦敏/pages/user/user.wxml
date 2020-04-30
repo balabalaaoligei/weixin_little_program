@@ -4,10 +4,12 @@
 <view class="container">
   <view class="userinfo">
     <view class="userinfo-avatar" bindtap="touchUserImg">
-      <open-data type="userAvatarUrl" wx:if="{{!userImg}}"></open-data>    <!--获取用户头像直接显示在小程序中-->
-      <image  src="{{userImg}}" wx:else class="userImg"></image>
+      <open-data type="userAvatarUrl" wx:if="{{!userImg}}"></open-data> <!--获取用户头像直接显示在小程序中-->
+      <image  src="{{userImg}}"  class="userImg" wx:else></image>
     </view>
-    <open-data type="userNickName" lang="zh_CN"></open-data>    <!--获取用户昵称直接显示在小程序中-->
+    <view>
+    <open-data type="userNickName" lang="zh_CN" wx:if="{{!userName}}"></open-data>
+    <text wx:else>{{userName}}</text></view>  <!--获取用户昵称直接显示在小程序中-->
   </view>
 
   <view class="border"><!--这里做上下边框-->
@@ -15,9 +17,11 @@
   </view>
 
   <view class="experience">
-    <view>{{message}}</view>
+    <view><view style="font-size:bond">个性签名：</view>{{usermessage}}</view>
   </view>
   <button>查看我的攻略</button>
+  <button bindtap="updateUserName">修改昵称</button> 
+  <button bindtap="updateUserSign">修改个性签名</button> 
 <!--这里写动画小块-->
   <view class="animation-div one"></view>
   <view class="animation-div two"></view>
