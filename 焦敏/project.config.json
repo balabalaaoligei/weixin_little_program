@@ -19,7 +19,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
 	"appid": "wxbee13cac68a9cbea",
-	"projectname": "test2",
+	"projectname": "%E7%84%A6%E6%95%8F-backend",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

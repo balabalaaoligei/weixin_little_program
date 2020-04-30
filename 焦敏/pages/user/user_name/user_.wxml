@@ -1,3 +1,3 @@
 
-<input type="text" placeholder="请输入修改的昵称" bindblur="addname"></input>
+<input type="text" placeholder="请输入修改的昵称" bindinput="addname"></input>
 <button bindtap="confirm" type="primary">确认修改</button>
