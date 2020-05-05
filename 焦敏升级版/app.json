@@ -4,7 +4,8 @@
         "pages/user/user",
         "pages/games/games",
         "pages/user/user_name/user_",
-        "pages/user/user_sign/user_"
+        "pages/user/user_sign/user_",
+        "pages/me/me"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -23,7 +24,7 @@
                 "text": "攻略"
             },
             {
-                "pagePath": "pages/user/user",
+                "pagePath": "pages/me/me",
                 "text": "我的"
             }
         ]
