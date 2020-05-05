@@ -1,0 +1,35 @@
+<!--pages/modify/modify.wxml-->
+<view class="modify">
+    <form bindsubmit="submit">
+        <view class="item">
+        <text class="item-name">头像</text>
+        <view class="userimg" bindtap="modify_AvatarUrl">
+            <open-data type="userAvatarUrl" wx:if="{{!userImg&&!userImgFileId}}" ></open-data>
+            <image src="{{userImgFileId}}" wx:elif="{{!userImg}}"></image>
+            <image src="{{userImg}}" wx:else></image>
+        </view>     
+        </view>
+        <view class="item">
+            <text class="item-name">昵称</text>
+            <view class="username">
+                <input value="{{userName}}" placeholder="请输入昵称" style="text-align:right;" name="Name"/>
+            </view>     
+        </view>
+        <view class="item">
+            <text class="item-name">所在国家</text>
+            <view class="usercountry">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                    当前选择：{{array[index]}}
+                    </view>
+                </picker>
+            </view>     
+        </view>
+        <view class="textarea">
+            <text class="item-name" style="margin-left:25rpx;">签名</text>
+            <textarea value="{{userAutograph}}" placeholder="请输入您的签名" name="Autograph">{{userAutograph}}</textarea> 
+        </view>      
+    <button form-type="submit" type="primary">确认修改</button>
+    </form>
+    
+</view>

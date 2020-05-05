@@ -5,7 +5,8 @@
         "pages/games/games",
         "pages/user/user_name/user_",
         "pages/user/user_sign/user_",
-        "pages/me/me"
+        "pages/me/me",
+        "pages/modify/modify"
     ],
     "window": {
         "backgroundTextStyle": "light",

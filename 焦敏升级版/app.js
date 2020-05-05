@@ -5,6 +5,7 @@ App({
     wx.cloud.init({
       env:"jmtest-uu7na"
      })
+    
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -41,8 +42,24 @@ App({
       }
     })
   },
+  //获取用户openid
+  getOpenId :function(){
+    return new Promise((resolve,reject)=>{
+      wx.cloud.callFunction({
+        name:'getuserOpenId',
+        success:res=>{
+          console.log('1',res.result.openid)
+          this.globalData.useropenid=res.result.openid
+          resolve(res)
+        },
+        fail:res=>{
+          reject(res)
+        }
+      })
+    })
+  },
   globalData: {
     userInfo: null,
-    //username:""
+    useropenid:null
   }
 })

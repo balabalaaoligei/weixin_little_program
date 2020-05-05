@@ -1,0 +1,31 @@
+/* pages/modify/modify.wxss */
+.modify{
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-bottom: gainsboro 1rpx solid;
+}
+.userimg{
+    overflow: hidden;
+    width: 100rpx;
+    height: 100rpx; 
+    border-radius: 50%;
+}
+.userimg image{
+    width: 100%;
+    height: 100%;
+}
+.item-name{
+    font-size: 17px;
+    font-weight: bold;
+}
+.textarea textarea{  
+    margin: auto; 
+    margin-top: 30rpx;
+}
