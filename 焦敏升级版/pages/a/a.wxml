@@ -1,0 +1,3 @@
+<!--pages/a/a.wxml-->
+<image src="/images/me/1.jpg"></image>
+<view bindtap="a"></view>

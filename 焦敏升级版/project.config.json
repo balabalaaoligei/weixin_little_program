@@ -68,6 +68,13 @@
 					"id": -1,
 					"name": "pages/modify/modify",
 					"pathName": "pages/modify/modify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/a/a",
+					"pathName": "pages/a/a",
 					"scene": null
 				}
 			]

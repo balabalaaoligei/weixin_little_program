@@ -1,0 +1,19 @@
+/* pages/a/a.wxss */
+page{
+    height: 100%;
+}
+image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+view{
+    width: 100rpx;
+    height: 55rpx;
+    /* border: 1rpx red solid; */
+    position: fixed;
+    bottom: 100rpx;
+    left: 325rpx;
+}
